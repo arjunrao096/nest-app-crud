@@ -39,7 +39,7 @@ export class UsersController {
     }
 
     @Put(':id')
-    @ApiOperation({summary: 'Update a User'})
+    @ApiOperation({summary: 'Update a User new thing'})
     @ApiResponse({type: SingleUserDto, description: 'Single User Updated Response', status: 203})
     async updateUser(@Param('id') id:string, @Body() data:any){
         return await this.service.updateUser(id, data);
